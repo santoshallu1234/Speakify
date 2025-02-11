@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 263 84% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 263 84% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 263 84% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@font-face {
+  font-family: 'Pgf'; /*a name to be used later*/
+  src: url('../lib/Fontspring-DEMO-pgf-now-regular.otf'); /*URL to font*/
+}
+
+h1,h2,h3,h4,h5,p{
+  font-family: "Pgf";
+  letter-spacing: 1px;
+  
+}
+button,input{
+  font-family: "Pgf";
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
